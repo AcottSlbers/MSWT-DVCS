@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Streichholzspiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Streichholzspiel</h1>
+    <div id="playerInputPopup" class="hidden">
+        <div class="popupContent">
+            <p id="popupMessage">Wie viele Streichhölzer nimmst du weg (1-3)?</p>
+            <input type="number" id="playerInput" min="1" max="3" />
+            <button onclick="submitPlayerTurn()">Bestätigen</button>
+        </div>
+    </div>
+    <div id="matchsticks">
+        <div id="matchsticks-inner">
+        </div>
+    </div>
+    <div id="gameMessage"></div>
+    <button id="startGameButton">Spiel starten</button>
+    <script src="matchesGame.js"></script>
+</body>
+</html>
