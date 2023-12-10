@@ -1,0 +1,71 @@
+h1, 
+#gameMessage {
+    display: flex;
+    justify-content: center;
+}
+
+#startGameButton {
+    display: block;
+    margin: 5px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#playerInputPopup {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.popupContent {
+    text-align: center;
+}
+
+
+#matchsticks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    max-width: 310px; 
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+
+}
+
+#matchsticks-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.matchstickContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.matchstickHead {
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-top-left-radius: 50%; 
+    border-top-right-radius: 50%; 
+}
+
+.matchstick {
+    width: 5px;
+    height: 50px;
+    background-color: #e3a008;
+    border-radius: 1px;
+}
